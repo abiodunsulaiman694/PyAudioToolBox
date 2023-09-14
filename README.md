@@ -40,3 +40,16 @@ output_format = 'ogg'
 batch_convert_audio(input_directory, output_directory, output_format)
 
 ```
+
+### Audio Extraction
+
+To extract audio from a video file, use the `extract_audio` function:
+
+```python
+from pyaudiotools.audio_extractor import extract_audio
+
+input_video = 'input.mp4'
+output_audio = 'output.wav'
+
+# Extract audio from the video
+extract_audio(input_video, output_audio)
