@@ -1,4 +1,4 @@
-# Manual tests
+# Sample code for convert_audio, batch_convert_audio
 from pyaudiotools.audio_converter import convert_audio, batch_convert_audio
 
 # Test individual audio conversion
