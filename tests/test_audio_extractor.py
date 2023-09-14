@@ -23,8 +23,8 @@ class TestAudioExtractor(unittest.TestCase):
         # Test audio extraction
         extract_audio(input_video, output_audio)
 
-        # Perform any assertions you need to verify the outcome
-        # For example, you can check if the output audio file exists and has the expected properties.
+        # TODO: perform any assertions you need to verify the outcome
+        # Check if the output audio file exists and has the expected properties.
 
 if __name__ == '__main__':
     unittest.main()
