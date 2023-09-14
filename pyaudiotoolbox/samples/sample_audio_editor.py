@@ -1,4 +1,4 @@
-from pyaudiotools.audio_editor import trim_audio, split_audio, concatenate_audio, apply_fade_in, apply_fade_out
+from pyaudiotoolbox.audio_editor import trim_audio, split_audio, concatenate_audio, apply_fade_in, apply_fade_out
 
 # Trim audio from 10 seconds to 30 seconds
 input_audio = "input.mp3"

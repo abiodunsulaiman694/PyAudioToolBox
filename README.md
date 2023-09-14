@@ -1,13 +1,13 @@
-# PyAudioTools
+# PyAudioToolBox
 
-PyAudioTools is a Python library for audio format conversion and manipulation.
+PyAudioToolBox is a Python library for audio format conversion and manipulation.
 
 ## Installation
 
-You can install PyAudioTools using pip:
+You can install PyAudioToolBox using pip:
 
 ```bash
-pip install pyaudiotools
+pip install pyaudiotoolbox
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ pip install pyaudiotools
 To convert an audio file to a different format, use the convert_audio function:
 
 ```python
-from pyaudiotools.audio_converter import convert_audio
+from pyaudiotoolbox.audio_converter import convert_audio
 
 input_file = 'input.wav'
 output_file = 'output.mp3'
@@ -31,7 +31,7 @@ convert_audio(input_file, output_file, output_format)
 To perform batch audio format conversion, use the batch_convert_audio function:
 
 ```python
-from pyaudiotools.audio_converter import batch_convert_audio
+from pyaudiotoolbox.audio_converter import batch_convert_audio
 
 input_directory = 'input_folder'
 output_directory = 'output_folder'
@@ -46,7 +46,7 @@ batch_convert_audio(input_directory, output_directory, output_format)
 To extract audio from a video file, use the `extract_audio` function:
 
 ```python
-from pyaudiotools.audio_extractor import extract_audio
+from pyaudiotoolbox.audio_extractor import extract_audio
 
 input_video = 'input.mp4'
 output_audio = 'output.wav'
@@ -64,7 +64,7 @@ Trim an audio file to a specified duration and save the trimmed portion to an ou
 - `end_time_ms` (int): End time in milliseconds for the trim.
 
 ```python
-from pyaudiotools.audio_editor import trim_audio
+from pyaudiotoolbox.audio_editor import trim_audio
 
 # Trim audio from 10 seconds to 30 seconds
 - `input_audio` = "input.mp3"
@@ -83,7 +83,7 @@ Split an audio file into multiple segments at specified split points and save ea
 - `split_points_ms` (list): List of split points in milliseconds.
 
 ```python
-from pyaudiotools.audio_editor import split_audio
+from pyaudiotoolbox.audio_editor import split_audio
 
 # Split audio into segments at 10 seconds and 20 seconds
 input_audio = "input.mp3"
@@ -100,7 +100,7 @@ Concatenate multiple audio files into a single audio file.
 - `output_audio` (str): Path to save the concatenated audio file.
 
 ```python
-from pyaudiotools.audio_editor import concatenate_audio
+from pyaudiotoolbox.audio_editor import concatenate_audio
 
 # Concatenate two audio files into one
 input_files = ["file1.mp3", "file2.mp3"]
@@ -118,7 +118,7 @@ Apply a fade-in effect to an audio file and save it to the output file.
 - `fade_duration_ms` (int): Duration of the fade-in effect in milliseconds.
 
 ```python
-from pyaudiotools.audio_editor import apply_fade_in
+from pyaudiotoolbox.audio_editor import apply_fade_in
 
 # Apply a 3-second fade-in effect to an audio file
 input_audio = "input.mp3"
@@ -137,7 +137,7 @@ Apply a fade-out effect to an audio file and save it to the output file.
 - `fade_duration_ms` (int): Duration of the fade-out effect in milliseconds.
 
 ```python
-from pyaudiotools.audio_editor import apply_fade_out
+from pyaudiotoolbox.audio_editor import apply_fade_out
 
 # Apply a 2-second fade-out effect to an audio file
 input_audio = "input.mp3"
