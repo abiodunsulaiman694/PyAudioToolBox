@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, Mock
-from pyaudiotools.audio_extractor import extract_audio
+from pyaudiotoolbox.audio_extractor import extract_audio
 
 class MockVideoFileClip:
 
@@ -13,7 +13,7 @@ class MockVideoFileClip:
     def __exit__(self, *args):
         pass
 
-@patch('pyaudiotools.audio_extractor.VideoFileClip', MockVideoFileClip)
+@patch('pyaudiotoolbox.audio_extractor.VideoFileClip', MockVideoFileClip)
 class TestAudioExtractor(unittest.TestCase):
 
     def test_extract_audio_default(self):

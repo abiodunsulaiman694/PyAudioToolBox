@@ -1,7 +1,7 @@
 import unittest
 import os
 from unittest.mock import Mock, patch
-from pyaudiotools.audio_converter import convert_audio, batch_convert_audio
+from pyaudiotoolbox.audio_converter import convert_audio, batch_convert_audio
 
 class TestAudioConverter(unittest.TestCase):
 
